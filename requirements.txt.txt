@@ -1,0 +1,54 @@
+## How to Run
+
+**1. Clone the repository**
+git clone https://github.com/joenzau41-png/nairobi-housing-regression.git
+cd nairobi-housing-regression
+
+**2. Install dependencies**
+pip install -r requirements.txt
+
+**3. Run the notebook**
+jupyter notebook notebooks/housing_regression.ipynb
+
+---
+
+## Requirements
+pandas
+numpy
+matplotlib
+seaborn
+statsmodels
+scikit-learn
+scipy
+joblib
+
+---
+
+## Project Structure
+nairobi_housing_regression/
+data/
+raw/                        <- original CSV from Kaggle
+cleaned/                    <- processed dataset
+notebooks/
+housing_regression.ipynb   <- main analysis notebook
+charts/
+price_distribution.png
+correlation_heatmap.png
+price_by_location.png
+residual_plots.png
+actual_vs_predicted.png
+models/
+housing_price_model.pkl    <- saved sklearn model
+README.md
+requirements.txt
+
+---
+
+## Tools Used
+
+- **Python 3.11**
+- **pandas** — data cleaning and feature engineering
+- **statsmodels** — OLS regression with full statistical summary
+- **scikit-learn** — train/test split and model evaluation
+- **seaborn / matplotlib** — EDA and result visualisation
+- **joblib** — model persistence
